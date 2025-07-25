@@ -21,9 +21,7 @@ async def handle_photo(update: Update, context: ContextTypes.DEFAULT_TYPE):
     image = Image.open(io.BytesIO(photo_bytes))
     text = pytesseract.image_to_string(image, lang="rus")
 
-    await update.message.reply_text(f"📄 Распознанный текст:
-{text}")
-
+    await update.message.reply_text(f"📄 Распознанный текст:\n{text}")
 if __name__ == "__main__":
     app = ApplicationBuilder().token(TOKEN).build()
 
