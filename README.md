@@ -1,2 +1,3 @@
-# egor_delivery_ai
- AI for multi-delivery optimization 
+# Egor Delivery AI
+
+Прототип Telegram-бота для обработки скриншотов доставки.
